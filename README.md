@@ -1,5 +1,11 @@
 # React Router Load On Demand
 
+It is frequently asked that how to load components on demand if you use `react` with `react-router`. In fact, in the official readme, there is a recommended loader named `react-router-proxy-loader` that can fullfill this need.
+
+However, it depends on `webpack` and there are many cases where `webpack` is not included in the build task. 
+
+In fact, it is quite easy to achieve the same goal without `webpack`. Here is an example with little dependencies, and if you see `example/jsx/loader.js`, you will find that it is nearly the same as `react-router-proxy-loader`, except that you don't need to have `webpack` installed.
+
 ## Some preparation
 
 Checkout this repo by `git clone` or download the ziped file.
